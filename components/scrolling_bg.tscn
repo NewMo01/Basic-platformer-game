@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://bb6548pjag4qv"]
+
+[ext_resource type="Texture2D" uid="uid://d30m07gqu72hx" path="res://art/assets/Sprites/Backgrounds/Default/background_clouds.png" id="1_0d2oi"]
+[ext_resource type="Texture2D" uid="uid://cpjvb14gnksk4" path="res://art/assets/Sprites/Backgrounds/Default/background_solid_sky.png" id="2_hbpgr"]
+[ext_resource type="Texture2D" uid="uid://dp672nie8ym7x" path="res://art/assets/Sprites/Backgrounds/Default/background_fade_trees.png" id="3_uw2q4"]
+
+[node name="ScrollingBG" type="Node2D" unique_id=476464793]
+
+[node name="Cloud" type="Parallax2D" parent="." unique_id=1602824449]
+repeat_size = Vector2(255, 0)
+autoscroll = Vector2(-30, 0)
+repeat_times = 15
+
+[node name="SpriteCloud" type="Sprite2D" parent="Cloud" unique_id=679685750]
+position = Vector2(128, 239)
+texture = ExtResource("1_0d2oi")
+
+[node name="Sky" type="Parallax2D" parent="." unique_id=348674815]
+repeat_size = Vector2(255, 0)
+autoscroll = Vector2(-30, 0)
+repeat_times = 15
+
+[node name="SpriteSky" type="Sprite2D" parent="Sky" unique_id=1486008978]
+position = Vector2(128, 42)
+texture = ExtResource("2_hbpgr")
+
+[node name="Over" type="Parallax2D" parent="." unique_id=374079908]
+scroll_offset = Vector2(0, 442)
+repeat_size = Vector2(255, 0)
+autoscroll = Vector2(-15, 0)
+repeat_times = 15
+
+[node name="SpriteOver" type="Sprite2D" parent="Over" unique_id=422762906]
+position = Vector2(128, 50)
+scale = Vector2(1, 1.2695313)
+texture = ExtResource("3_uw2q4")

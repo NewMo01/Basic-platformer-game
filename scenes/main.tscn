@@ -1,11 +1,24 @@
-[gd_scene format=3 uid="uid://diox8vhfkpfy6"]
+[gd_scene format=4 uid="uid://diox8vhfkpfy6"]
 
-[ext_resource type="Texture2D" uid="uid://d30m07gqu72hx" path="res://art/assets/Sprites/Backgrounds/Default/background_clouds.png" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://bb6548pjag4qv" path="res://components/scrolling_bg.tscn" id="1_o5qli"]
+[ext_resource type="Texture2D" uid="uid://co6qvicvxesiu" path="res://art/assets/Spritesheets/spritesheet-tiles-default.png" id="2_0wfyh"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sugp2"]
+texture = ExtResource("2_0wfyh")
+texture_region_size = Vector2i(65, 65)
+15:23/0 = 0
+8:9/0 = 0
+11:9/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_f3fh7"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_sugp2")
 
 [node name="Main" type="Node2D" unique_id=1026492381]
 
-[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1286598216]
+[node name="ScrollingBG" parent="." unique_id=476464793 instance=ExtResource("1_o5qli")]
+metadata/_edit_lock_ = true
 
-[node name="BackgroundClouds" type="Sprite2D" parent="Parallax2D" unique_id=1706435454]
-position = Vector2(128, 184)
-texture = ExtResource("1_o5qli")
+[node name="Ground" type="TileMapLayer" parent="." unique_id=932945186]
+tile_map_data = PackedByteArray("AAAAAAkAAAAIAAkAAAABAAkAAAAIAAkAAAACAAkAAAAIAAkAAAADAAkAAAAIAAkAAAAEAAkAAAAIAAkAAAAFAAkAAAAIAAkAAAAGAAkAAAAIAAkAAAAHAAkAAAAIAAkAAAAIAAkAAAAIAAkAAAAJAAkAAAAIAAkAAAAKAAkAAAAIAAkAAAALAAkAAAAIAAkAAAAMAAkAAAAIAAkAAAANAAkAAAAIAAkAAAAOAAkAAAAIAAkAAAAPAAkAAAAIAAkAAAAQAAkAAAAIAAkAAAARAAkAAAAIAAkAAAAAAAoAAAAIAAkAAAABAAoAAAAIAAkAAAACAAoAAAAIAAkAAAADAAoAAAAIAAkAAAAEAAoAAAAIAAkAAAAFAAoAAAAIAAkAAAAGAAoAAAAIAAkAAAAHAAoAAAAIAAkAAAAIAAoAAAAIAAkAAAAJAAoAAAAIAAkAAAAKAAoAAAAIAAkAAAALAAoAAAAIAAkAAAAMAAoAAAAIAAkAAAANAAoAAAAIAAkAAAAOAAoAAAAIAAkAAAAPAAoAAAAIAAkAAAAQAAoAAAAIAAkAAAARAAoAAAAIAAkAAAAAAAgAAAALAAkAAAABAAgAAAALAAkAAAACAAgAAAALAAkAAAADAAgAAAALAAkAAAAEAAgAAAALAAkAAAAFAAgAAAALAAkAAAAGAAgAAAALAAkAAAAHAAgAAAALAAkAAAAIAAgAAAALAAkAAAAJAAgAAAALAAkAAAAKAAgAAAALAAkAAAALAAgAAAALAAkAAAAMAAgAAAALAAkAAAANAAgAAAALAAkAAAAOAAgAAAALAAkAAAAPAAgAAAALAAkAAAAQAAgAAAALAAkAAAARAAgAAAALAAkAAAA=")
+tile_set = SubResource("TileSet_f3fh7")
