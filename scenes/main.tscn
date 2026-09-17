@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://diox8vhfkpfy6"]
+
+[ext_resource type="Texture2D" uid="uid://d30m07gqu72hx" path="res://art/assets/Sprites/Backgrounds/Default/background_clouds.png" id="1_o5qli"]
+
+[node name="Main" type="Node2D" unique_id=1026492381]
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1286598216]
+
+[node name="BackgroundClouds" type="Sprite2D" parent="Parallax2D" unique_id=1706435454]
+position = Vector2(128, 184)
+texture = ExtResource("1_o5qli")
