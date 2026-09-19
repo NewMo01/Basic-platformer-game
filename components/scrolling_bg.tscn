@@ -9,7 +9,7 @@
 [node name="Cloud" type="Parallax2D" parent="." unique_id=1602824449]
 repeat_size = Vector2(255, 0)
 autoscroll = Vector2(-30, 0)
-repeat_times = 15
+repeat_times = 60
 
 [node name="SpriteCloud" type="Sprite2D" parent="Cloud" unique_id=679685750]
 position = Vector2(128, 239)
@@ -18,19 +18,30 @@ texture = ExtResource("1_0d2oi")
 [node name="Sky" type="Parallax2D" parent="." unique_id=348674815]
 repeat_size = Vector2(255, 0)
 autoscroll = Vector2(-30, 0)
-repeat_times = 15
+repeat_times = 60
 
 [node name="SpriteSky" type="Sprite2D" parent="Sky" unique_id=1486008978]
-position = Vector2(128, 42)
+position = Vector2(128, -159)
+scale = Vector2(1, 2.5703125)
 texture = ExtResource("2_hbpgr")
 
 [node name="Over" type="Parallax2D" parent="." unique_id=374079908]
 scroll_offset = Vector2(0, 442)
 repeat_size = Vector2(255, 0)
 autoscroll = Vector2(-15, 0)
-repeat_times = 15
+repeat_times = 60
 
 [node name="SpriteOver" type="Sprite2D" parent="Over" unique_id=422762906]
 position = Vector2(128, 50)
 scale = Vector2(1, 1.2695313)
 texture = ExtResource("3_uw2q4")
+
+[node name="Sky2" type="Parallax2D" parent="." unique_id=1121939612]
+repeat_size = Vector2(255, 0)
+autoscroll = Vector2(-30, 0)
+repeat_times = 60
+
+[node name="SpriteSky" type="Sprite2D" parent="Sky2" unique_id=359301510]
+position = Vector2(126, 979)
+scale = Vector2(1, 2.5703125)
+texture = ExtResource("2_hbpgr")
