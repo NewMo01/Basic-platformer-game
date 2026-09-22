@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bb6548pjag4qv" path="res://components/scrolling_bg.tscn" id="1_bwv4p"]
 [ext_resource type="Texture2D" uid="uid://co6qvicvxesiu" path="res://art/assets/Spritesheets/spritesheet-tiles-default.png" id="2_odhdn"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dw26h"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bwv4p"]
 texture = ExtResource("2_odhdn")
 texture_region_size = Vector2i(65, 65)
 11:9/0 = 0
@@ -78,9 +78,9 @@ texture_region_size = Vector2i(65, 65)
 [sub_resource type="TileSet" id="TileSet_syr6e"]
 tile_size = Vector2i(65, 65)
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_dw26h")
+sources/0 = SubResource("TileSetAtlasSource_bwv4p")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lrl65"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_odhdn"]
 texture = ExtResource("2_odhdn")
 texture_region_size = Vector2i(65, 65)
 11:9/0 = 0
@@ -118,7 +118,7 @@ texture_region_size = Vector2i(65, 65)
 [sub_resource type="TileSet" id="TileSet_76388"]
 tile_size = Vector2i(65, 65)
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_lrl65")
+sources/0 = SubResource("TileSetAtlasSource_odhdn")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_syr6e"]
 size = Vector2(161.5, 848)
